@@ -6,12 +6,10 @@
  * Time: 4:27 PM
  */
 
-$url = $_GET['url'];
+require 'libs\Bootstrap.php';
 
-echo  $url;
+$app = new Bootstrap();
 
-require 'controllers/' .$url .'.php';
 
-$controller = new $url;
 
 ?>
