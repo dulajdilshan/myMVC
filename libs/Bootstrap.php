@@ -9,6 +9,7 @@
 class Bootstrap
 {
 
+
     function __construct()
     {
         $url = $_GET['url'];
@@ -21,6 +22,7 @@ class Bootstrap
 
         echo "<br>" . $url[0] . ":";
 
+
         $file = 'controllers/' . $url[0] . '.php';
 
 
@@ -28,8 +30,9 @@ class Bootstrap
             require $file;
 
         }else{
-            require 'controllers/error.php';
-            $controller = new Error();
+            require 'controllers/errorHandler.php';
+            $controller = new ErrorHandler();
+            return false;
         }
 
         $controller = new $url[0];

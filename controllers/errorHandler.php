@@ -6,7 +6,7 @@
  * Time: 9:56 AM
  */
 
-class Error
+class ErrorHandler
 {
     /**
      * Error constructor.

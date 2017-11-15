@@ -7,9 +7,7 @@
  */
 
 require 'libs\Bootstrap.php';
-
+require '';
 $app = new Bootstrap();
-
-
 
 ?>
