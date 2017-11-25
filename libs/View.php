@@ -10,7 +10,7 @@ class View
 {
     function __construct()
     {
-        echo 'View library constructor is executing' ;
+        echo 'View library constructor is executing' ."<br>" ;
     }
 
     public function render($name)

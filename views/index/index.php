@@ -1,7 +1,12 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Dulaj
- * Date: 25-Nov-17
- * Time: 4:05 PM
- */
+<?php require 'views/header.php';?>
+
+<?php echo "<hr/>"; ?>
+
+
+<?php echo $this->msg; ?>
+
+
+<?php   echo "<hr/>";
+require 'views/footer.php';
+
+?>

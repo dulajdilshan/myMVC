@@ -18,11 +18,13 @@ class Bootstrap
 
         $url = explode('/', $url);
 
-        //test
-        print_r($url);
+//test
+//        print_r($url);
 
-        if (empty($url)){
+        if (empty($url[0])){
             require 'controllers/index.php';
+            $index = new Index();
+            return false;
         }
 
         echo "Bootstrap library controller is executing.." ."<br>";
