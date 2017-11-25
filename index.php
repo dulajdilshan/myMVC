@@ -10,7 +10,7 @@
 //using autoloader
 require 'libs\Bootstrap.php';
 require 'libs\Controller.php';
-require 'libs\';
+require 'libs\View.php';
 
 $app = new Bootstrap();
 

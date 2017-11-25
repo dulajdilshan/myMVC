@@ -19,17 +19,9 @@ class Bootstrap
         $url = explode('/', $url);
 
 
-
-
-
         //print_r($url);
 
         echo "<br>" . $url[0] . ":";
-
-
-
-
-
 
         $file = 'controllers/' . $url[0] . '.php';
 
@@ -38,11 +30,13 @@ class Bootstrap
             require $file;
 
         }else{
-            require 'controllers/errorHandler.php';
-            $controller = new ErrorHandler();
+            require 'controllers/error_handler.php';
+            $controller = new Error_Handler();
             return false;
         }
 
+
+//controller
         $controller = new $url[0];
 
         if (isset($url[2])) {
