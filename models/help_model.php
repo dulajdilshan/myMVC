@@ -14,6 +14,6 @@ class Help_Model
      */
     public function __construct()
     {
-        echo "Help model";
+        echo "Help_model constructor is executing";
     }
 }
