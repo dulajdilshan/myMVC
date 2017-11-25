@@ -11,6 +11,7 @@ class Help extends Controller
 
     function __construct()
     {
+        parent::__construct();
         echo " help controller constructor is executing" ."<br>";
         //echo "<br>" ."Help";
     }

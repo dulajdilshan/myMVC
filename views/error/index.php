@@ -4,3 +4,9 @@
 
 
 <?php echo $this->msg; ?>
+
+
+<?php   echo "<hr/>";
+        require 'views/footer.php';
+
+?>

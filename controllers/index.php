@@ -7,11 +7,11 @@
  */
 
 
-class Index{
+class Index extends Controller {
 
     function __construct(){
-
-        echo "We are in index";
+        parent::__construct();
+        echo "Index Controller constructor is executing";
 
     }
 }

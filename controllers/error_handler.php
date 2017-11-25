@@ -15,7 +15,7 @@ class Error_Handler extends Controller
     public function __construct()
     {
         parent::__construct();
-        echo "<br> This is the error_handler Controller";
+        echo "<br> Error_Handler Controller constructor is executing";
         $this->view->msg = "Not Found Error";
         $this->view->render('error/index');
 

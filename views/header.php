@@ -1,9 +1,15 @@
 <html>
 
-<head>  </head>
+<head>
+    <title>MY Test MVC</title>
+    <link rel="stylesheet" href="public/css/default.css" />
+</head>
 
 <body>
-<h1>Header</h1>
 
-</body>
-</html>
+<div class="header">
+    <h1>Header</h1>
+</div>
+
+<div class="content">
+

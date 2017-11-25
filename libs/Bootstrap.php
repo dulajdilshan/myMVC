@@ -12,16 +12,21 @@ class Bootstrap
 
     function __construct()
     {
-        $url = $_GET['url'];
+        $url = isset($_GET['url']) ? $_GET['url']:null;
 
         $url = rtrim($url, '/');
 
         $url = explode('/', $url);
 
+        //test
+        print_r($url);
 
-        //print_r($url);
+        if (empty($url)){
+            require 'controllers/index.php';
+        }
 
-        echo "<br>" . $url[0] . ":";
+        echo "Bootstrap library controller is executing.." ."<br>";
+        echo "From URL =>" . $url[0] ."<br>";
 
         $file = 'controllers/' . $url[0] . '.php';
 
