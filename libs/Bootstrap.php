@@ -18,9 +18,17 @@ class Bootstrap
 
         $url = explode('/', $url);
 
+
+
+
+
         //print_r($url);
 
         echo "<br>" . $url[0] . ":";
+
+
+
+
 
 
         $file = 'controllers/' . $url[0] . '.php';

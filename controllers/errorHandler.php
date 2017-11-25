@@ -6,7 +6,7 @@
  * Time: 9:56 AM
  */
 
-class ErrorHandler
+class ErrorHandler extends Controller
 {
     /**
      * Error constructor.
@@ -14,6 +14,7 @@ class ErrorHandler
 
     public function __construct()
     {
+        parent::__construct();
         echo "This is an error";
     }
 }

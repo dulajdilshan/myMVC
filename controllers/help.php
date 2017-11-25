@@ -6,7 +6,8 @@
  * Time: 9:38 AM
  */
 
-class Help{
+class Help extends Controller
+{
 
     function __construct()
     {
@@ -14,7 +15,7 @@ class Help{
         echo "<br>" ."Help";
     }
 
-    function something($arg =false)
+    function something($arg=false)
     {
         echo " > Something";
         echo ">" .$arg;

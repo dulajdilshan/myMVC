@@ -10,6 +10,7 @@ class Controller
 {
     function __construct()
     {
-        echo "Main Controller";
+        echo "Main Controller <br> ";
+        $this->view = new View();
     }
 }

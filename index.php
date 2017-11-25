@@ -6,8 +6,12 @@
  * Time: 4:27 PM
  */
 
+
+//using autoloader
 require 'libs\Bootstrap.php';
-require '';
+require 'libs\Controller.php';
+require 'libs\';
+
 $app = new Bootstrap();
 
 ?>
