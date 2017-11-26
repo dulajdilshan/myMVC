@@ -13,7 +13,7 @@ class Help extends Controller
     {
         parent::__construct();
         echo " help controller constructor is executing" ."<br>";
-        //echo "<br>" ."Help";
+        $this->view->render('help/index');
     }
 
     function something($arg=false)
