@@ -15,7 +15,11 @@ class View
 
     public function render($name)
     {
+        require 'views/header.php';
+        echo "<hr/>";
         require 'views/' .$name .'.php';
+        echo "<hr/>";
+        require 'views/footer.php';
         //$t = new $name;
     }
 }
