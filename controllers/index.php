@@ -11,7 +11,7 @@ class Index extends Controller {
 
     function __construct(){
         parent::__construct();
-        echo "Index Controller constructor is executing";
+        echo "Index Controller constructor is executing" ."<br>";
 
     }
 

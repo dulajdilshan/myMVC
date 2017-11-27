@@ -3,18 +3,15 @@
  * Created by PhpStorm.
  * User: Dulaj
  * Date: 27-Nov-17
- * Time: 9:50 AM
+ * Time: 9:52 AM
  */
 
-class Model
+class Database extends PDO
 {
-
-    /**
-     * Model constructor.
-     */
 
     public function __construct()
     {
-        $this->db = new Database();
+        parent::__construct('mysql:host=localhost;dbname=my_mvc','root','');
     }
+
 }

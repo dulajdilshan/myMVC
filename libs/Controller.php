@@ -12,10 +12,27 @@ class Controller
     {
         echo "Main Controller Library constructor is executing.. " ."<br> ";
         $this->view = new View();
+
+
     }
 
     function index()
     {
         //indexing
     }
+
+
+    function loadmodel($name)
+    {
+        $file = 'models/' .$name .'_model.php';
+
+        if(file_exists($file))
+        {
+            require $file;
+            $model_name = $name .'_Model';
+            $this->model = new $model_name();
+        }
+    }
+
+
 }

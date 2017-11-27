@@ -21,6 +21,8 @@ class Error_Handler extends Controller
 
     function index()
     {
+        $name = 'error_handler';
+        parent::loadmodel($name);
         $this->view->msg = "Not Found Error";
         $this->view->render('error/index');
     }

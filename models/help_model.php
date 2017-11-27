@@ -14,6 +14,13 @@ class Help_Model extends Model
      */
     public function __construct()
     {
-        echo "Help_model constructor is executing";
+        parent::__construct();
+        echo "Help_model constructor is executing" .'<br>';
+    }
+
+
+    function setmsg($msg = "Help_Model sent a message ")
+    {
+        return $msg;
     }
 }

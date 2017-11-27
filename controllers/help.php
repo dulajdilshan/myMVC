@@ -18,6 +18,8 @@ class Help extends Controller
 
     function index()
     {
+        $name = 'help';
+        parent::loadmodel($name);
         $this->view->render('help/index');
     }
 
