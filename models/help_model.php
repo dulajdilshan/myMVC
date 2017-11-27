@@ -6,7 +6,7 @@
  * Time: 6:42 PM
  */
 
-class Help_Model
+class Help_Model extends Model
 {
 
     /**
