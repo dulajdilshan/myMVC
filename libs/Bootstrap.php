@@ -24,6 +24,7 @@ class Bootstrap
         if (empty($url[0])){
             require 'controllers/index.php';
             $index = new Index();
+            $index->index();
             return false;
         }
 
@@ -39,12 +40,14 @@ class Bootstrap
         }else{
             require 'controllers/error_handler.php';
             $controller = new Error_Handler();
+            $controller->index();
             return false;
         }
 
 
 //controller
         $controller = new $url[0];
+        $controller->index();
 
         if (isset($url[2])) {
             $controller->{$url[1]}($url[2]);

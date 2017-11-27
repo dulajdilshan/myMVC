@@ -12,9 +12,13 @@ class Index extends Controller {
     function __construct(){
         parent::__construct();
         echo "Index Controller constructor is executing";
+
+    }
+
+    function index()
+    {
         $this->view->msg = "index/index is loading";
         $this->view->render('index/index');
-
     }
 }
 

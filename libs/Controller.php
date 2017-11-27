@@ -13,4 +13,9 @@ class Controller
         echo "Main Controller Library constructor is executing.. " ."<br> ";
         $this->view = new View();
     }
+
+    function index()
+    {
+        //indexing
+    }
 }

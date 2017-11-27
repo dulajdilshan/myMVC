@@ -16,10 +16,13 @@ class Error_Handler extends Controller
     {
         parent::__construct();
         echo "<br> Error_Handler Controller constructor is executing";
+
+    }
+
+    function index()
+    {
         $this->view->msg = "Not Found Error";
         $this->view->render('error/index');
-
-
     }
 
 }
